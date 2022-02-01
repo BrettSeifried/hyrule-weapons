@@ -7,24 +7,30 @@ import { apiData } from '../services/route';
 
 export default function CategoryList() {
   const [list, setList] = useState([]);
+  const [loading, setLoading] = useState(true);
   const history = useHistory();
   const location = useLocation();
   const search = location.search;
   const searchList = new URLSearchParams(search);
+  console.log('search', search);
   const items = searchList.get('items');
 
   useEffect(() => {
     async function getListOfItems() {
-      const allItems = await apiData(items);
-      setList(allItems);
+      const allItems = await apiData();
+      console.log('allItems', allItems);
+      setList(allItems.data);
+      setLoading(false);
     }
     getListOfItems();
-  }, [items]);
+  }, []);
+
+  if (loading) return <p>loading...</p>;
 
   return (
     <div>
       <h2>{items}</h2>
-      <ListCard items={items} />
+      <ListCard list={list} />
     </div>
   );
 }
