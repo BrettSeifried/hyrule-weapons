@@ -1,5 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
+import { apiData } from '../services/route';
 
-export default function CategoryList() {
-  return <div></div>;
+export default function CategoryDetail() {
+  const [dataList, setDataList] = useState([]);
+
+  useEffect(() => {
+    async function getData() {
+      const listData = await apiData();
+      setDataList(listData);
+    }
+    getData();
+  }, []);
+
+  return <div>data list</div>;
 }

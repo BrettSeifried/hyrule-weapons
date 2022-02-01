@@ -26,18 +26,18 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 # Plan of attack
 
-    [] file structure
+    [x] file structure
     [] Build our routes
-        [] make sure pages are connected
+        [x] make sure pages are connected
         [] Use Switch
         [] URLsearhParams
         [] useParams
         * Pull data from URL
-    [] Header for Home, search.
     [] import data
         [] Type of data structure __________
         [] deconstruct data, feed into URL
         [] render fetchData into a page to test
+    [x] Header for Home, search.
     [] build out listDisplay
         [] item Card
             [] Id, Image, Name
