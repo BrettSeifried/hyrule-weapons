@@ -26,6 +26,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 # Plan of attack
 
+    [] file structure
     [] Build our routes
         [] make sure pages are connected
         [] Use Switch
@@ -36,6 +37,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
     [] import data
         [] Type of data structure __________
         [] deconstruct data, feed into URL
+        [] render fetchData into a page to test
     [] build out listDisplay
         [] item Card
             [] Id, Image, Name
@@ -49,3 +51,13 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
         *search
         * hash
         * state
+
+## API LINK
+
+<a href=https://botw-compendium.herokuapp.com/api/v2>https://botw-compendium.herokuapp.com/api/v2</a>
+
+    *categories
+        * equipment
+        * materials
+        * monsters
+        * treasure
