@@ -54,7 +54,7 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## API LINK
 
-<a href=https://botw-compendium.herokuapp.com/api/v2>https://botw-compendium.herokuapp.com/api/v2</a>
+<a href=https://botw-compendium.herokuapp.com/api/v2/category/materials>https://botw-compendium.herokuapp.com/api/v2/category/materials</a>
 
     *categories
         * equipment

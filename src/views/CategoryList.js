@@ -12,8 +12,7 @@ export default function CategoryList() {
   const location = useLocation();
   const search = location.search;
   const searchList = new URLSearchParams(search);
-  console.log('search', search);
-  const items = searchList.get('items');
+  const items = searchList.get('category');
 
   useEffect(() => {
     async function getListOfItems() {
@@ -25,12 +24,17 @@ export default function CategoryList() {
     getListOfItems();
   }, []);
 
+  function returnHome() {
+    history.push('/');
+  }
+
   if (loading) return <p>loading...</p>;
 
   return (
     <div>
       <h2>{items}</h2>
       <ListCard list={list} />
+      <button onClick={returnHome}>Return home</button>
     </div>
   );
 }
