@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ListCard({ list: { materials, id } }) {
-  console.log('items', materials);
+  console.log('items', materials[0].id);
   return (
     <div>
       <p>materials</p>
@@ -11,7 +11,7 @@ export default function ListCard({ list: { materials, id } }) {
         // Name
         return (
           <div key={item.name}>
-            <Link to={`/materials/${id}`}>
+            <Link to={`/materials/${materials[0].id}`}>
               <h3 key={item}>{item.name}</h3>;
               <img src={item.image} />;
             </Link>
@@ -19,6 +19,7 @@ export default function ListCard({ list: { materials, id } }) {
         );
         //cooking_effect
         // description
+        // hearts_recovered
       })}
     </div>
   );

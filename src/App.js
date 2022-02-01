@@ -23,11 +23,11 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/:category">
-          <CategoryList />
-        </Route>
         <Route path="/:category/:id">
           <CategoryDetail />
+        </Route>
+        <Route path="/:category">
+          <CategoryList />
         </Route>
       </Switch>
     </BrowserRouter>

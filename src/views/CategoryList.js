@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import { useParams } from 'react-router-dom';
 import ListCard from '../components/listCard';
 import { apiData } from '../services/route';
 
@@ -12,7 +11,7 @@ export default function CategoryList() {
   const location = useLocation();
   const search = location.search;
   const searchList = new URLSearchParams(search);
-  const items = searchList.get('category');
+  const items = searchList.get('id');
 
   useEffect(() => {
     async function getListOfItems() {
