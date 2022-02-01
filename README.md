@@ -61,3 +61,11 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
         * materials
         * monsters
         * treasure
+
+# Youtube Sources
+
+    * traversy media
+    * Mosh
+    * WebDevSimplified
+    * ensure they using fucntional components
+        * if its class, run away. or looks different.

@@ -11,14 +11,14 @@ export default function CategoryList() {
   const location = useLocation();
   const search = location.search;
   const searchList = new URLSearchParams(search);
-  const items = searchList.get('id');
+  const items = searchList.get('itemId');
 
   useEffect(() => {
     async function getListOfItems() {
       const allItems = await apiData();
-      console.log('allItems', allItems);
       setList(allItems.data);
       setLoading(false);
+      console.log('allItems', allItems);
     }
     getListOfItems();
   }, []);

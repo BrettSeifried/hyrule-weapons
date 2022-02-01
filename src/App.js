@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Redirect, Link, Switch } from 'react-router-dom';
 import './App.css';
-import CategoryDetail from './views/CategoryDetail';
+import DetailCard from './components/DetailCard';
 import CategoryList from './views/CategoryList';
 import Home from './views/Home';
 
@@ -24,7 +24,7 @@ function App() {
           <Home />
         </Route>
         <Route path="/:category/:id">
-          <CategoryDetail />
+          <DetailCard />
         </Route>
         <Route path="/:category">
           <CategoryList />

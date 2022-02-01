@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export default function ListCard({ list: { materials, id } }) {
-  console.log('items', materials[0].id);
+export default function ListCard({ list: { materials } }) {
+  console.log('materials', materials);
   return (
     <div>
       <p>materials</p>
@@ -11,7 +11,7 @@ export default function ListCard({ list: { materials, id } }) {
         // Name
         return (
           <div key={item.name}>
-            <Link to={`/materials/${materials[0].id}`}>
+            <Link to={`/materials/${item.id}`}>
               <h3 key={item}>{item.name}</h3>;
               <img src={item.image} />;
             </Link>
