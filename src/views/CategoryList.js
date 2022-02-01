@@ -1,17 +1,30 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import ListCard from '../components/listCard';
 import { apiData } from '../services/route';
 
-export default function CategoryDetail() {
-  const [dataList, setDataList] = useState([]);
+export default function CategoryList() {
+  const [list, setList] = useState([]);
+  const history = useHistory();
+  const location = useLocation();
+  const search = location.search;
+  const searchList = new URLSearchParams(search);
+  const items = searchList.get('items');
 
   useEffect(() => {
-    async function getData() {
-      const listData = await apiData();
-      setDataList(listData);
+    async function getListOfItems() {
+      const allItems = await apiData(items);
+      setList(allItems);
     }
-    getData();
-  }, []);
+    getListOfItems();
+  }, [items]);
 
-  return <div>data list</div>;
+  return (
+    <div>
+      <h2>{items}</h2>
+      <ListCard items={items} />
+    </div>
+  );
 }
