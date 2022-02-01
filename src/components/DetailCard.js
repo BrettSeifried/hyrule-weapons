@@ -4,19 +4,22 @@ import { fetchItemDetails } from '../services/route';
 
 export default function DetailCard() {
   const [matDetail, setMatDetail] = useState({});
-  const params = useParams();
-  console.log('params', params);
+  const [loading, setLoading] = useState(true);
+  //   const params = useParams();
   const { id } = useParams();
 
   useEffect(() => {
     async function fetchData() {
       const matDetails = await fetchItemDetails(id);
       setMatDetail(matDetails);
+      setLoading(false);
     }
     fetchData();
   }, [id]);
 
-  const { name, image, description, cooking_effect, hearts_recovered } = matDetail;
+  //   const { name, image, description, cooking_effect, hearts_recovered } = matDetail;
+
+  if (loading) return <p>loading...</p>;
 
   return (
     <div>
@@ -24,11 +27,11 @@ export default function DetailCard() {
         <p>Home</p>
       </Link>
       <div>
-        <h3>{name}</h3>
-        <img src={image} alt={name} />
-        <p>{description}</p>
-        <p>Effect: {cooking_effect}</p>
-        <p>Hearts: {hearts_recovered}</p>
+        <h3>{matDetail.data.name}</h3>
+        <img src={matDetail.data.image} alt={name} />
+        <p>Description: {matDetail.data.description}</p>
+        <p>Effect: {matDetail.data.cooking_effect}</p>
+        <p>Hearts: {matDetail.data.hearts_recovered}</p>
       </div>
     </div>
   );
