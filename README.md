@@ -23,3 +23,29 @@ You will also see any lint errors in the console.
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+# Plan of attack
+
+    [] Build our routes
+        [] make sure pages are connected
+        [] Use Switch
+        [] URLsearhParams
+        [] useParams
+        * Pull data from URL
+    [] Header for Home, search.
+    [] import data
+        [] Type of data structure __________
+        [] deconstruct data, feed into URL
+    [] build out listDisplay
+        [] item Card
+            [] Id, Image, Name
+    [] build item Detail
+        [] Id, Name, Image, attack, defense, description, common locations
+    [] useHistory to send back after button push
+    [] useParams to grab PARAMS from Url
+    [] useLocation to grab QUERY params URL
+        * key
+        * pathname
+        *search
+        * hash
+        * state
