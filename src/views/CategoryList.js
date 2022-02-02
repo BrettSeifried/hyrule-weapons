@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import ListCard from '../components/listCard';
+import ListCard from '../components/TisisTheBest';
 import { apiData } from '../services/route';
 
 export default function CategoryList() {
