@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import './list.css';
 
 export default function ListCard({ list: { materials, monsters } }) {
-  console.log('materials', materials);
   const { url } = useRouteMatch();
   const history = useHistory();
 
