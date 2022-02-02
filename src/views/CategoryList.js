@@ -19,6 +19,7 @@ export default function CategoryList() {
       setList(allItems.data);
       setLoading(false);
       console.log('allItems', allItems);
+      console.log('New Data', allItems.data.monsters);
     }
     getListOfItems();
   }, []);

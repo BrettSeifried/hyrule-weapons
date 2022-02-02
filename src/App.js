@@ -15,8 +15,8 @@ function App() {
           <Link to="/">Home</Link>
           {/* <Link to="/equipment">Equipment</Link> */}
           <Link to="/materials">Materials</Link>
-          {/* <Link to="/monsters">Monsters</Link>
-          <Link to="/treasure">Treasure</Link> */}
+          <Link to="/monsters">Monsters</Link>
+          {/* <Link to="/treasure">Treasure</Link> */}
         </ul>
       </header>
       <Switch>

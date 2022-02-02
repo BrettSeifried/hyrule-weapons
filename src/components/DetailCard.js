@@ -5,7 +5,6 @@ import { fetchItemDetails } from '../services/route';
 export default function DetailCard() {
   const [matDetail, setMatDetail] = useState({});
   const [loading, setLoading] = useState(true);
-  //   const params = useParams();
   const { id } = useParams();
 
   useEffect(() => {
@@ -16,8 +15,6 @@ export default function DetailCard() {
     }
     fetchData();
   }, [id]);
-
-  //   const { name, image, description, cooking_effect, hearts_recovered } = matDetail;
 
   if (loading) return <p>loading...</p>;
 
