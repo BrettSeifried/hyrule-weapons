@@ -2,23 +2,22 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useRouteMatch } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import './list.css';
 
 export default function ListCard({ list: { materials, monsters } }) {
-  const { url, path } = useRouteMatch();
+  console.log('materials', materials);
+  const { url } = useRouteMatch();
   const history = useHistory();
-  console.log('url', url);
-  console.log('path', path);
 
   if (url === '/materials')
     return (
-      <div>
-        <p>materials</p>
+      <div className="list">
         {materials.map((item) => {
           return (
             <div key={item.name}>
               <Link to={`/${item.category}/${item.id}`}>
-                <h3 key={item}>{item.name}</h3>;
-                <img src={item.image} />;
+                <h3 key={item}>{item.name}</h3>
+                <img src={item.image} />
               </Link>
             </div>
           );
@@ -27,14 +26,13 @@ export default function ListCard({ list: { materials, monsters } }) {
     );
   else if (url === '/monsters')
     return (
-      <div>
-        <p>materials</p>
+      <div className="list">
         {monsters.map((item) => {
           return (
             <div key={item.name}>
               <Link to={`/${item.category}/${item.id}`}>
-                <h3 key={item}>{item.name}</h3>;
-                <img src={item.image} />;
+                <h3 key={item}>{item.name}</h3>
+                <img src={item.image} />
               </Link>
             </div>
           );

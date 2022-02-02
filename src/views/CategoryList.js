@@ -18,8 +18,6 @@ export default function CategoryList() {
       const allItems = await apiData();
       setList(allItems.data);
       setLoading(false);
-      console.log('allItems', allItems);
-      console.log('New Data', allItems.data.monsters);
     }
     getListOfItems();
   }, []);
@@ -32,8 +30,10 @@ export default function CategoryList() {
 
   return (
     <div>
-      <h2>{items}</h2>
-      <ListCard list={list} />
+      <div>
+        <h2>{items}</h2>
+        <ListCard list={list} />
+      </div>
       <button onClick={returnHome}>Return home</button>
     </div>
   );
