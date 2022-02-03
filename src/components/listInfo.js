@@ -13,7 +13,7 @@ export default function ListCard({ list: { materials, monsters } }) {
       <div className="list">
         {materials.map((item) => {
           return (
-            <div key={item.name}>
+            <div key={item.name} aria-label="list-item">
               <Link to={`/${item.category}/${item.id}`}>
                 <h3 key={item}>{item.name}</h3>
                 <img src={item.image} />
@@ -28,7 +28,7 @@ export default function ListCard({ list: { materials, monsters } }) {
       <div className="list">
         {monsters.map((item) => {
           return (
-            <div key={item.name}>
+            <div key={item.name} aria-label="list-item">
               <Link to={`/${item.category}/${item.id}`}>
                 <h3 key={item}>{item.name}</h3>
                 <img src={item.image} />
