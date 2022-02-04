@@ -17,8 +17,6 @@ export default function DetailCard() {
   }, [id]);
   if (loading) return <p>loading...</p>;
 
-  console.log('matDetail', matDetail);
-
   return (
     <div>
       <Link to="/">
