@@ -16,7 +16,6 @@ export default function CategoryList() {
   useEffect(() => {
     async function getListOfItems() {
       const allItems = await apiData();
-      console.log('allItems', allItems);
       setList(allItems);
       setLoading(false);
     }

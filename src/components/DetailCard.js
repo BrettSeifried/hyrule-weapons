@@ -15,7 +15,6 @@ export default function DetailCard() {
     }
     fetchData();
   }, [id]);
-
   if (loading) return <p>loading...</p>;
 
   return (
