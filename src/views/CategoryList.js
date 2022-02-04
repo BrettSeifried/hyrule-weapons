@@ -5,7 +5,7 @@ import ListCard from '../components/listInfo';
 import { apiData } from '../services/route';
 
 export default function CategoryList() {
-  const [list, setList] = useState([]);
+  const [list, setList] = useState({});
   const [loading, setLoading] = useState(true);
   const history = useHistory();
   const location = useLocation();
@@ -16,7 +16,8 @@ export default function CategoryList() {
   useEffect(() => {
     async function getListOfItems() {
       const allItems = await apiData();
-      setList(allItems.data);
+      console.log('allItems', allItems);
+      setList(allItems);
       setLoading(false);
     }
     getListOfItems();

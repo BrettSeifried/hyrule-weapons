@@ -1,42 +1,42 @@
 import React from 'react';
-import { useHistory } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { useRouteMatch } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import './list.css';
 
 export default function ListCard({ list: { materials, monsters } }) {
   const { url } = useRouteMatch();
-  const history = useHistory();
+  const location = useLocation();
 
-  if (url === '/materials')
+  if (location.pathname === '/materials')
     return (
       <div className="list">
         {materials.map((item) => {
           return (
             <div key={item.name} aria-label="list-item">
-              <Link to={`/${item.category}/${item.id}`}>
+              <Link to={`${url}/${item.id}`}>
                 <h3 key={item}>{item.name}</h3>
-                <img src={item.image} />
+                <img src={item.image} alt={item.name} />
               </Link>
             </div>
           );
         })}
       </div>
     );
-  else if (url === '/monsters')
+  else if (location.pathname === '/monsters')
     return (
       <div className="list">
         {monsters.map((item) => {
           return (
             <div key={item.name} aria-label="list-item">
-              <Link to={`/${item.category}/${item.id}`}>
+              <Link to={`${url}/${item.id}`}>
                 <h3 key={item}>{item.name}</h3>
-                <img src={item.image} />
+                <img src={item.image} alt={item.name} />
               </Link>
             </div>
           );
         })}
       </div>
     );
-  else history.push('/');
+  else return <h1>404 Error</h1>;
 }

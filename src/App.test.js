@@ -2,7 +2,6 @@ import { render, screen, waitForElementToBeRemoved } from '@testing-library/reac
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import App from './App';
-import Home from './views/Home';
 
 test('renders learn react link', () => {
   render(<App />);
