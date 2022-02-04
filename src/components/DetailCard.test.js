@@ -22,13 +22,13 @@ test('Materials Detail page renders name, image, description, effect, hearts', a
   expect(image).toBeInTheDocument();
 
   const descrip = screen.getByText(
-    /description: a mushroom that can grow almost anywhere but prefers ceilings and sheer cliffs\. cook it before eating to temporarily increase your movement speed\./i
+    /a mushroom that can grow almost anywhere but prefers ceilings and sheer cliffs\. cook it before eating to temporarily increase your movement speed\./i
   );
   expect(descrip).toBeInTheDocument();
 
-  const effect = screen.getByText(/effect: speed up/i);
+  const effect = screen.getByText(/speed up/i);
   expect(effect).toBeInTheDocument();
 
-  const hearts = screen.getByText(/hearts: 0\.5/i);
+  const hearts = screen.getByText(/0\.5/i);
   expect(hearts).toBeInTheDocument();
 });

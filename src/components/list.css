@@ -13,3 +13,24 @@
   width: 75%;
   height: 100%;
 }
+
+.list img {
+  border-radius: 100px;
+  border: 4px rgb(63, 63, 63) solid;
+  margin: 1rem;
+  filter: drop-shadow(15px 7px 12px black);
+}
+
+h3 {
+  text-align: center;
+  filter: drop-shadow(15px 7px 4px black);
+}
+
+img {
+  border-radius: 100px;
+  border: 4px rgb(63, 63, 63) solid;
+  margin: 1rem;
+  filter: drop-shadow(15px 7px 12px black);
+  display: flex;
+  margin: auto;
+}

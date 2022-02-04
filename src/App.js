@@ -12,11 +12,15 @@ function App() {
           <Redirect to="/" />
         </Route>
         <ul>
-          <Link to="/">Home</Link>
-          {/* <Link to="/equipment">Equipment</Link> */}
-          <Link to="/materials">Materials</Link>
-          <Link to="/monsters">Monsters</Link>
-          {/* <Link to="/treasure">Treasure</Link> */}
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/materials">Materials</Link>
+          </li>
+          <li>
+            <Link to="/monsters">Monsters</Link>
+          </li>
         </ul>
       </header>
       <Switch>
