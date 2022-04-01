@@ -1,28 +1,6 @@
-# Alchemy React Base Template
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"><img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Use this template for all your "from scratch" deliverables. To start, simply run
-
-- `npm install`
-- `npm start`
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Hyrule Compendium
 
 # Plan of attack
 
@@ -69,3 +47,6 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
     * WebDevSimplified
     * ensure they using fucntional components
         * if its class, run away. or looks different.
+
+An App built in React and off the Hyrule-Compendium free API to display materials and monsters.
+
