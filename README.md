@@ -40,13 +40,5 @@
         * monsters
         * treasure
 
-# Youtube Sources
-
-    * traversy media
-    * Mosh
-    * WebDevSimplified
-    * ensure they using fucntional components
-        * if its class, run away. or looks different.
-
 An App built in React and off the Hyrule-Compendium free API to display materials and monsters.
 
