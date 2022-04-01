@@ -5,25 +5,25 @@
 # Plan of attack
 
     [x] file structure
-    [] Build our routes
+    [x] Build our routes
         [x] make sure pages are connected
-        [] Use Switch
-        [] URLsearhParams
-        [] useParams
+        [x] Use Switch
+        [x] URLsearhParams
+        [x] useParams
         * Pull data from URL
-    [] import data
-        [] Type of data structure __________
-        [] deconstruct data, feed into URL
-        [] render fetchData into a page to test
+    [x] import data
+        [x] Type of data structure __________
+        [x] deconstruct data, feed into URL
+        [x] render fetchData into a page to test
     [x] Header for Home, search.
-    [] build out listDisplay
-        [] item Card
-            [] Id, Image, Name
-    [] build item Detail
-        [] Id, Name, Image, attack, defense, description, common locations
-    [] useHistory to send back after button push
-    [] useParams to grab PARAMS from Url
-    [] useLocation to grab QUERY params URL
+    [x] build out listDisplay
+        [x] item Card
+            [x] Id, Image, Name
+    [x] build item Detail
+        [x] Id, Name, Image, attack, defense, description, common locations
+    [x] useHistory to send back after button push
+    [x] useParams to grab PARAMS from Url
+    [x] useLocation to grab QUERY params URL
         * key
         * pathname
         *search
