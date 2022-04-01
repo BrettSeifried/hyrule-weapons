@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+
+body {
+  background-color: rgb(161, 255, 224);
+  font-family: 'Rye', cursive;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +42,20 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin: 10px;
+  list-style: none;
+  filter: drop-shadow(15px 7px 4px black);
+}
+
+h1 {
+  text-align: center;
+  filter: drop-shadow(15px 7px 4px black);
 }

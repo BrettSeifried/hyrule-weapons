@@ -1,0 +1,15 @@
+.table {
+  display: flex;
+  justify-content: center;
+}
+
+.table img {
+  border-radius: 100px;
+  border: 4px rgb(63, 63, 63) solid;
+  margin: 1rem;
+  filter: drop-shadow(15px 7px 12px black);
+}
+
+.table h1 {
+  text-align: center;
+}
